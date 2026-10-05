@@ -1,0 +1,568 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #172033;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #4f8cff;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    font-size: 14px;
+}
+
+.nav-list a:hover {
+    color: #4f8cff;
+}
+
+
+/* HERO */
+
+.hero {
+    background-color: #f4f7fb;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #3977e8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    color: #172033;
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #3977e8;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    color: #5d6675;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button-primary {
+    background-color: #3977e8;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #2863cb;
+}
+
+.button-outline {
+    border: 1px solid #3977e8;
+    color: #3977e8;
+}
+
+.button-outline:hover {
+    background-color: #3977e8;
+    color: white;
+}
+
+.hero-image {
+    width: 300px;
+}
+
+.image-box {
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.image-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* SECTION */
+
+.section {
+    padding: 75px 0;
+}
+
+.section-gray {
+    background-color: #f4f6f9;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: #172033;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.section-heading > p:last-child {
+    color: #667085;
+}
+
+
+/* PROFIL */
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.profile-text,
+.profile-info {
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: white;
+}
+
+.profile-text h3,
+.profile-info h3 {
+    color: #172033;
+    margin-bottom: 15px;
+}
+
+.profile-text p {
+    margin-bottom: 12px;
+    color: #5d6675;
+}
+
+.profile-info li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-info li:last-child {
+    border-bottom: none;
+}
+
+.profile-info strong {
+    display: block;
+    color: #172033;
+}
+
+.profile-info span {
+    color: #667085;
+}
+
+
+/* PROJECT */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 22px;
+}
+
+.project-category {
+    color: #3977e8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.project-content h3 {
+    color: #172033;
+    margin-bottom: 10px;
+}
+
+.project-content > p:not(.project-category) {
+    color: #667085;
+    font-size: 14px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.project-tags span {
+    background-color: #edf3ff;
+    color: #3977e8;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+/* SERTIFIKASI */
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.certificate-card {
+    background-color: white;
+    border-left: 4px solid #3977e8;
+    padding: 22px;
+}
+
+.certificate-card h3 {
+    color: #172033;
+    margin-bottom: 8px;
+}
+
+.certificate-card p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* KONTAK */
+
+.contact {
+    background-color: #172033;
+    color: white;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.contact h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #c7ceda;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-list a {
+    border: 1px solid #71809a;
+    padding: 9px 20px;
+    border-radius: 5px;
+}
+
+.contact-list a:hover {
+    background-color: #3977e8;
+    border-color: #3977e8;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #101724;
+    color: #aeb7c6;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 13px;
+}
+
+.footer p:first-child {
+    margin-bottom: 5px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* HP */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .nav-list {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-button {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 230px;
+    }
+
+    .image-box img {
+        height: 230px;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid,
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* HP KECIL */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-list {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+}
+
+/* =========================
+ANIMASI
+========================= */
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes munculFoto {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Animasi saat halaman pertama dibuka */
+
+.hero-text {
+    animation: muncul 0.8s ease;
+}
+
+.hero-image {
+    animation: munculFoto 0.8s ease;
+}
+
+
+/* Animasi bagian lain */
+
+.profile-content {
+    animation: muncul 0.8s ease;
+}
+
+.project-card {
+    animation: muncul 0.8s ease;
+}
+
+.certificate-card {
+    animation: muncul 0.8s ease;
+}
+
+
+/* Efek ketika mouse diarahkan */
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.button {
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Animasi dimatikan jika pengguna memilih
+   mengurangi gerakan pada perangkat */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}
