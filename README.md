@@ -63,3 +63,6 @@ icons/
 -Pengembangan diri
 -kontak
 -tampilan responsive
+
+ -Preview Website-
+https://komangindraney-source.github.io/pemweb-tugas1-42530039/
