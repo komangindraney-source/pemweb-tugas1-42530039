@@ -485,6 +485,8 @@ ul {
 ANIMASI
 ========================= */
 
+/* Animasi tampilan halaman saat pertama dibuka */
+
 @keyframes muncul {
     from {
         opacity: 0;
