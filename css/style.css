@@ -383,6 +383,7 @@ ul {
 
 
 /* TABLET */
+/* Responsive untuk ukuran tablet */
 
 @media (max-width: 1024px) {
 
@@ -398,6 +399,7 @@ ul {
 
 
 /* HP */
+/* Responsive untuk ukuran HP */
 
 @media (max-width: 768px) {
 
