@@ -46,6 +46,7 @@ ul {
     z-index: 10;
 }
 
+/* Layout header menggunakan flexbox*/
 .header-content {
     min-height: 70px;
     display: flex;
@@ -242,7 +243,7 @@ ul {
 }
 
 
-/* PROJECT */
+/* Layout kartu project menggunakan CSS Grid */
 
 .project-grid {
     display: grid;
